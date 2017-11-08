@@ -45,7 +45,7 @@
 $(document).ready(function(){
 	show = true;
 
-	// Show and Hide
+/*	// Show and Hide
 	$("#title").click(function(){		
 		if (show){
 			$(".row").hide();
@@ -54,7 +54,7 @@ $(document).ready(function(){
 			$(".row").show();
 			show = true;
 		}
-	});
+	});*/
 
 	// Toggle
 	// $("#title").click(function(){				
@@ -73,26 +73,26 @@ $(document).ready(function(){
 	// });
 
 	// Slide Down and Up
-	// $("#title").click(function(){				
-	// 	if (show){
-	// 		$("#details").slideDown("slow");
-	// 		show = false;
-	// 	} else {
-	// 		$("#details").slideUp(2000); // in ms
-	// 		show = true;
-	// 	}
-	// });
+/*	$("#title").click(function(){				
+		if (show){
+			$("#details").slideDown("fast");
+			show = false;
+		} else {
+			$("#details").slideUp(1000); // in ms
+			show = true;
+		}
+	});*/
 
 	// Animate
-	// $("#title").click(function(){				
-	// 	$(".row").animate({
-	// 			height: '100px',
-	// 			fontSize: '30px'
-	// 		}, 2000, function() {
-	// 			/* stuff to do after animation is complete */
-	// 			$("#details").slideDown("slow");
-	// 		});;
-	// });
+	$("#title").click(function(){				
+		$(".row").animate({
+				height: '100px',
+				fontSize: '30px'
+			}, 2000, function() {
+				/* stuff to do after animation is complete */
+				//$("#details").slideDown("slow");
+			});;
+	});
 
 });
 
